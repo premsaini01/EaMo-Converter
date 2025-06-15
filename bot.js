@@ -14,13 +14,11 @@ try {
   botToken = process.env.TELEGRAM_BOT_TOKEN;
   if (!botToken) {
     console.error(
-      "ERROR: TELEGRAM_BOT_TOKEN not found! Please set it in config.js (local) or as an environment variable (deployment)."
+      "ERROR: TELEGRAM_BOT_TOKEN not found! Please ensure it is set in config.js (for local development) or as an environment variable (for deployment)."
     );
-    // In deployment, you might want to exit if the token isn't found
-    // process.exit(1);
+    process.exit(1); // Crucial for deployment to stop if no token
   }
 }
-
 // Initialize the bot with your token
 const bot = new TelegramBot(botToken, { polling: true });
 

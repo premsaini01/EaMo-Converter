@@ -17,7 +17,7 @@
   "author": "EaMo",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.x.x",
-    "node-telegram-bot-api": "^0.x.x"
+    "axios": "^1.10.0",
+    "node-telegram-bot-api": "^0.66.0"
   }
 }
