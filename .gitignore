@@ -1,0 +1,5 @@
+node_modules/
+npm-debug.log
+.DS_Store
+config.js        # Important: Prevents your local config with token from being pushed
+userTags.json    # Important: Prevents your local user data file from being pushed (if not using a DB)
