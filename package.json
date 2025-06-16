@@ -2,9 +2,9 @@
   "name": "amazon-affiliate-telegram-bot",
   "version": "1.0.0",
   "description": "A Telegram bot to convert Amazon product links into affiliate links.",
-  "main": "api/index.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node api/index.js",
+    "start": "node bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
